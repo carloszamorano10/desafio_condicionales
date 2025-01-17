@@ -9,3 +9,41 @@ img{
     width: 500px;
     margin-top: 50px;
 }
+
+.tituloStikers{
+    text-align: center;
+    margin-top: 150px;
+}
+.stickerW{
+    width: 400px;
+    height: 400px;
+    box-shadow: 2px 2px 2px 2px rgba(53, 53, 51, 0.919);
+    border-radius: 4px;
+}
+.stickers_cont, .selects, .cont-btn{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.selects{
+    justify-content: space-around;
+    margin: 10px;
+}
+
+.btnVerificar{
+    background-color: blue;
+    color: white;
+    padding: 8px;
+    border: none;
+    border-radius: 5px; 
+}
+.cont-btn{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.resultado{
+    font-size: x-large;
+}

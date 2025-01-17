@@ -14,3 +14,24 @@ click.addEventListener("click", ()=>{
     }
 })
 
+
+
+const sticker1 = document.querySelector("#stik1")
+const sticker2 = document.querySelector("#stik2")
+const sticker3 = document.querySelector("#stik3")
+const btn = document.querySelector(".btnVerificar")
+const parrafo = document.querySelector(".resultado")
+
+
+btn.addEventListener("click", ()=>{
+    const sumaTotal = Number(sticker1.value) + Number(sticker2.value) + Number(sticker3.value)
+    console.log(sumaTotal)
+
+    if(sumaTotal <= 10){
+      parrafo.innerHTML = "Total de Stickers Seleccionados : " + sumaTotal
+    }else {
+        parrafo.innerHTML = "Seleccionaste Demasaidos Stickers!!"
+    }
+    
+    
+})
