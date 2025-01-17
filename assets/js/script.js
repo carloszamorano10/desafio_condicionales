@@ -1,3 +1,5 @@
+// PRIMER ITEM BORDE!!!!
+
 const img = document.querySelector(".imagen")
 const click = document.querySelector(".anchore")
 
@@ -14,7 +16,7 @@ click.addEventListener("click", ()=>{
     }
 })
 
-
+// SEGUNDO ITEM STICKERS!!!!
 
 const sticker1 = document.querySelector("#stik1")
 const sticker2 = document.querySelector("#stik2")
@@ -34,4 +36,25 @@ btn.addEventListener("click", ()=>{
     }
     
     
+})
+
+// TERCER ITEM CONSTRASEÑA!!!!
+
+const numero1 = document.querySelector("#psw1")
+const numero2 = document.querySelector("#psw2")
+const numero3 = document.querySelector("#psw3")
+const btnPswrd = document.querySelector(".btn-pswrd")
+const resultado = document.querySelector(".mensajePswrd")
+
+
+btnPswrd.addEventListener("click", ()=>{
+    let contrasena = numero1.value + numero2.value + numero3.value
+    
+    if(contrasena == "911"){
+        resultado.innerHTML = "Password 1 Correcto!!"
+    } else if (contrasena == 714){
+        resultado.innerHTML = "Password 2 Correcto!!"
+    } else { 
+        resultado.innerHTML = "Password Incorrecto"
+    }
 })
